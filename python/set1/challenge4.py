@@ -32,9 +32,9 @@ f.close()
 best_score = 0
 best_msg = []
 
-for line in lines:           # перебираем каждую строку
+for line in lines:           
     data = hex_to_bytes(line)
-    for key in range(256):   # для каждой строки перебираем все ключи
+    for key in range(256):   
         decrypted = single_byte_xor(data, key)
         s = score(decrypted)
         if s > best_score:
