@@ -75,7 +75,7 @@ def find_best_key_byte(block):
             best_key = key
     return best_key
 
-f = open('..python\\set1\\data\\6.txt', 'r')
+f = open('C:\\Users\\Asus\\cryptopals\\python\\set1\\bin\\6.txt', 'r')
 content = ""
 for line in f:
     content += line.replace('\n', '')
